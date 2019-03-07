@@ -37,7 +37,7 @@ with open("helloworld.txt", "w", encoding='utf-8') as f:
 #--------------------------------------------------------
 
 #4)읽기 모드로 파일 객체 생성하기
-with open("helloworld.txt", "r", encoding='utf-8') as f:
+with open("section05/helloworld.txt", "r", encoding='utf-8') as f:
     #data = f.read()
     #print(data)
     lines = f.readlines() #각 행을 원소로 갖는 리스트 생성

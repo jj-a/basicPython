@@ -12,14 +12,14 @@ tpl = "{0}, {1}, {2}, {3}\n"
 # csv 파일 저장을 위한 f 객체 생성
 # Excel: csv는 euc-kr 형식
 # SublimeText 에디터를 쓸 경우 euc-kr은 못읽으니 주의 =..????????
-with open("grade.csv", "w", encoding="utf-8") as f:
+with open("section05/grade.csv", "w", encoding="utf-8") as f:
     f.write("이름 국어 영어 수학\n")
     for item in grade:
         tmp = tpl.format(item["name"], item["kor"], item["eng"], item["mat"])
         f.write(tmp)
 
 
-with open("grade.csv", "r", encoding="utf-8") as f:
+with open("section05/grade.csv", "r", encoding="utf-8") as f:
     csv_list = f.readlines()
     print(csv_list)
 
